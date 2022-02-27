@@ -11,48 +11,10 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{EFD071B6-7A7F-4E8B-8624-1BB750C4704B}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{C4AB3A02-16F7-4090-A62A-1B2C3222652E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[AGVS-001.BI_ERROR]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D7B294AD-0EB2-4BCD-9359-36123646E094}"
-      DTS:ObjectName="AGVS-001.BI_ERROR">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=AGVS-001;Initial Catalog=BI_ERROR;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{8FC9E0DD-2C0E-45D5-BA32-523B3B7AA15E}"
-      DTS:ObjectName="AGVS-001.COMERCIO_OLTP">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=AGVS-001;Initial Catalog=COMERCIO_OLTP;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[AGVS-001.COMERCIO_STAGE]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{A1D6D5D7-E00D-4A65-8502-5BFFD93AE353}"
-      DTS:ObjectName="AGVS-001.COMERCIO_STAGE">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=AGVS-001;Initial Catalog=COMERCIO_STAGE;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -120,8 +82,8 @@
               <connections>
                 <connection
                   refId="Package\STAGE CLIENTE\CLIENTE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
-                  connectionManagerRefId="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
+                  connectionManagerID="{8FC9E0DD-2C0E-45D5-BA32-523B3B7AA15E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
                   name="OleDbConnection" />
               </connections>
@@ -574,8 +536,8 @@
               <connections>
                 <connection
                   refId="Package\STAGE CLIENTE\Destino OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[AGVS-001.COMERCIO_STAGE]"
-                  connectionManagerRefId="Package.ConnectionManagers[AGVS-001.COMERCIO_STAGE]"
+                  connectionManagerID="{A1D6D5D7-E00D-4A65-8502-5BFFD93AE353}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AGVS-001.COMERCIO_STAGE]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
                   name="OleDbConnection" />
               </connections>
@@ -781,8 +743,8 @@
               <connections>
                 <connection
                   refId="Package\STAGE CLIENTE\Destino OLE DB 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[AGVS-001.BI_ERROR]"
-                  connectionManagerRefId="Package.ConnectionManagers[AGVS-001.BI_ERROR]"
+                  connectionManagerID="{D7B294AD-0EB2-4BCD-9359-36123646E094}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AGVS-001.BI_ERROR]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
                   name="OleDbConnection" />
               </connections>
@@ -1023,8 +985,8 @@ where [refTable].[ID_CLIENTE] = ?</property>
               <connections>
                 <connection
                   refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
-                  connectionManagerRefId="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
+                  connectionManagerID="{8FC9E0DD-2C0E-45D5-BA32-523B3B7AA15E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
                   description="O gerenciador de conexões usado para acessar dados de pesquisa."
                   name="OleDbConnection" />
               </connections>
