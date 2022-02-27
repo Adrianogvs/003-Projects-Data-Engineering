@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{A6F193AE-817B-41AF-9982-AF7364F2821D}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{EFD071B6-7A7F-4E8B-8624-1BB750C4704B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -56,13 +56,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Tarefa Fluxo de Dados"
+      DTS:refId="Package\STAGE CLIENTE"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarefa Fluxo de Dados"
       DTS:DTSID="{3901C549-9FD0-47F0-B67F-FAB1F04575E9}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Tarefa Fluxo de Dados"
+      DTS:ObjectName="STAGE CLIENTE"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -70,7 +70,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Tarefa Fluxo de Dados\CLIENTE"
+              refId="Package\STAGE CLIENTE\CLIENTE"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="Origem OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;7"
               description="Origem OLE DB"
@@ -119,7 +119,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarefa Fluxo de Dados\CLIENTE.Connections[OleDbConnection]"
+                  refId="Package\STAGE CLIENTE\CLIENTE.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
                   connectionManagerRefId="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -127,161 +127,161 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB]"
+                  refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB]"
                   name="Saída de Origem OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[IDCLIENTE]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]"
+                      externalMetadataColumnId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[IDCLIENTE]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]"
                       name="IDCLIENTE"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NOME]"
+                      externalMetadataColumnId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NOME]"
                       length="30"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]"
                       name="NOME"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SOBRENOME]"
+                      externalMetadataColumnId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SOBRENOME]"
                       length="30"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]"
                       name="SOBRENOME"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[EMAIL]"
+                      externalMetadataColumnId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[EMAIL]"
                       length="60"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]"
                       name="EMAIL"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SEXO]"
+                      externalMetadataColumnId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SEXO]"
                       length="1"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]"
                       name="SEXO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]"
                       dataType="dbDate"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NASCIMENTO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]"
+                      externalMetadataColumnId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NASCIMENTO]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]"
                       name="NASCIMENTO"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[IDCLIENTE]"
                       dataType="i4"
                       name="IDCLIENTE" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NOME]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NOME]"
                       codePage="1252"
                       dataType="str"
                       length="30"
                       name="NOME" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SOBRENOME]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SOBRENOME]"
                       codePage="1252"
                       dataType="str"
                       length="30"
                       name="SOBRENOME" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[EMAIL]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[EMAIL]"
                       codePage="1252"
                       dataType="str"
                       length="60"
                       name="EMAIL" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SEXO]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[SEXO]"
                       codePage="1252"
                       dataType="str"
                       length="1"
                       name="SEXO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NASCIMENTO]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].ExternalColumns[NASCIMENTO]"
                       dataType="dbDate"
                       name="NASCIMENTO" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB]"
+                  refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB]"
                   isErrorOut="true"
                   name="Saída de Erro de Origem OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[IDCLIENTE]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[IDCLIENTE]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[IDCLIENTE]"
                       name="IDCLIENTE" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NOME]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NOME]"
                       codePage="1252"
                       dataType="str"
                       length="30"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NOME]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NOME]"
                       name="NOME" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SOBRENOME]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SOBRENOME]"
                       codePage="1252"
                       dataType="str"
                       length="30"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SOBRENOME]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SOBRENOME]"
                       name="SOBRENOME" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[EMAIL]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[EMAIL]"
                       codePage="1252"
                       dataType="str"
                       length="60"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[EMAIL]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[EMAIL]"
                       name="EMAIL" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SEXO]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SEXO]"
                       codePage="1252"
                       dataType="str"
                       length="1"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SEXO]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[SEXO]"
                       name="SEXO" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NASCIMENTO]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NASCIMENTO]"
                       dataType="dbDate"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NASCIMENTO]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[NASCIMENTO]"
                       name="NASCIMENTO" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -290,7 +290,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME"
+              refId="Package\STAGE CLIENTE\CONCATENA NOME"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Coluna Derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
               description="Cria novos valores de coluna aplicando expressões a colunas de entrada da transformação. Crie novas colunas ou substitua as existentes. Por exemplo, concatene os valores das colunas 'first name' e 'last name' para formar uma coluna 'full name'."
@@ -298,50 +298,50 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]"
+                  refId="Package\STAGE CLIENTE\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]"
                   description="Entrada para a Transformação Coluna Derivada"
                   name="Entrada de Coluna Derivada">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Inputs[Entrada de Coluna Derivada].Columns[NOME]"
+                      refId="Package\STAGE CLIENTE\CONCATENA NOME.Inputs[Entrada de Coluna Derivada].Columns[NOME]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="30"
                       cachedName="NOME"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]" />
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Inputs[Entrada de Coluna Derivada].Columns[SOBRENOME]"
+                      refId="Package\STAGE CLIENTE\CONCATENA NOME.Inputs[Entrada de Coluna Derivada].Columns[SOBRENOME]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="30"
                       cachedName="SOBRENOME"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]" />
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Inputs[Entrada de Coluna Derivada].Columns[SEXO]"
+                      refId="Package\STAGE CLIENTE\CONCATENA NOME.Inputs[Entrada de Coluna Derivada].Columns[SEXO]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1"
                       cachedName="SEXO"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]" />
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada]"
+                  refId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada]"
                   description="Saída Padrão da Transformação Coluna Derivada"
                   exclusionGroup="1"
                   name="Saída de Coluna Derivada"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]">
+                  synchronousInputId="Package\STAGE CLIENTE\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]"
+                      refId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computação"
                       errorRowDisposition="FailComponent"
                       length="61"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]"
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]"
                       name="NOME COMPLETO"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -349,7 +349,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Expressão de Coluna Derivada"
-                          name="Expression">#{Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]} + " " + #{Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]}</property>
+                          name="Expression">#{Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]} + " " + #{Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -359,12 +359,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]"
+                      refId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computação"
                       errorRowDisposition="FailComponent"
                       length="9"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]"
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]"
                       name="SEXO PALAVRA"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -372,7 +372,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Expressão de Coluna Derivada"
-                          name="Expression">([FINDSTRING](#{Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]},"M",1) != 0) ? "MASCULINO" : "FEMININO"</property>
+                          name="Expression">([FINDSTRING](#{Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]},"M",1) != 0) ? "MASCULINO" : "FEMININO"</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -385,23 +385,23 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada]"
+                  refId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada]"
                   description="Saída de Erro da Transformação Coluna Derivada"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Coluna Derivada"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]">
+                  synchronousInputId="Package\STAGE CLIENTE\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -410,7 +410,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarefa Fluxo de Dados\Conversão de Dados"
+              refId="Package\STAGE CLIENTE\Conversão de Dados"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Conversão de Dados;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
               description="Conversão de Dados"
@@ -418,40 +418,40 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
+                  refId="Package\STAGE CLIENTE\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
                   name="Entrada de Conversão de Dados">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[NOME COMPLETO]"
+                      refId="Package\STAGE CLIENTE\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[NOME COMPLETO]"
                       cachedDataType="wstr"
                       cachedLength="61"
                       cachedName="NOME COMPLETO"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]" />
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[SEXO PALAVRA]"
+                      refId="Package\STAGE CLIENTE\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[SEXO PALAVRA]"
                       cachedDataType="wstr"
                       cachedLength="9"
                       cachedName="SEXO PALAVRA"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]" />
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados]"
+                  refId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados]"
                   exclusionGroup="1"
                   name="Saída de Conversão de Dados"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]">
+                  synchronousInputId="Package\STAGE CLIENTE\Conversão de Dados.Inputs[Entrada de Conversão de Dados]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING NOME COMPLETO]"
+                      refId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING NOME COMPLETO]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
                       length="61"
-                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING NOME COMPLETO]"
+                      lineageId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING NOME COMPLETO]"
                       name="STRING NOME COMPLETO"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -459,7 +459,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]}</property>
+                          name="SourceInputColumnLineageID">#{Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -467,13 +467,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING SEXO PALAVRA]"
+                      refId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING SEXO PALAVRA]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversão"
                       errorRowDisposition="FailComponent"
                       length="9"
-                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING SEXO PALAVRA]"
+                      lineageId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING SEXO PALAVRA]"
                       name="STRING SEXO PALAVRA"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -481,7 +481,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]}</property>
+                          name="SourceInputColumnLineageID">#{Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -492,22 +492,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados]"
+                  refId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Conversão de Dados"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]">
+                  synchronousInputId="Package\STAGE CLIENTE\Conversão de Dados.Inputs[Entrada de Conversão de Dados]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      lineageId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      lineageId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -516,7 +516,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarefa Fluxo de Dados\Destino OLE DB"
+              refId="Package\STAGE CLIENTE\Destino OLE DB"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
               description="Destino OLE DB"
@@ -573,7 +573,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Connections[OleDbConnection]"
+                  refId="Package\STAGE CLIENTE\Destino OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[AGVS-001.COMERCIO_STAGE]"
                   connectionManagerRefId="Package.ConnectionManagers[AGVS-001.COMERCIO_STAGE]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -581,115 +581,115 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB]"
+                  refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB]"
                   errorOrTruncationOperation="Inserir"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Destino OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[IDCLIENTE]"
                       cachedDataType="i4"
                       cachedName="IDCLIENTE"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[EMAIL]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[EMAIL]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="60"
                       cachedName="EMAIL"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[NASCIMENTO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[NASCIMENTO]"
                       cachedDataType="dbDate"
                       cachedName="NASCIMENTO"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[REGIAO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[REGIAO]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="REGIAO"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[REGIAO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[REGIAO]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[REGIAO]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[REGIAO]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[ESTADO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[ESTADO]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="ESTADO"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[ESTADO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[ESTADO]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[ESTADO]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[ESTADO]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[CIDADE]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[CIDADE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CIDADE"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CIDADE]"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[CIDADE]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CIDADE]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[CIDADE]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[STRING SEXO PALAVRA]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[STRING SEXO PALAVRA]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="9"
                       cachedName="STRING SEXO PALAVRA"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING SEXO PALAVRA]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
+                      lineageId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING SEXO PALAVRA]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[STRING NOME COMPLETO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[STRING NOME COMPLETO]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="61"
                       cachedName="STRING NOME COMPLETO"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
-                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING NOME COMPLETO]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
+                      lineageId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[STRING NOME COMPLETO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
                       dataType="i4"
                       name="IDCLIENTE" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="NOME" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
                       codePage="1252"
                       dataType="str"
                       length="20"
                       name="SEXO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
                       dataType="dbDate"
                       name="NASCIMENTO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CIDADE]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CIDADE]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="CIDADE" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[ESTADO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[ESTADO]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="ESTADO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[REGIAO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[REGIAO]"
                       codePage="1252"
                       dataType="str"
                       length="20"
                       name="REGIAO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
                       codePage="1252"
                       dataType="str"
                       length="100"
@@ -699,22 +699,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB]"
+                  refId="Package\STAGE CLIENTE\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Destino OLE DB"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB]">
+                  synchronousInputId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\STAGE CLIENTE\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\STAGE CLIENTE\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -723,7 +723,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1"
+              refId="Package\STAGE CLIENTE\Destino OLE DB 1"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
               description="Destino OLE DB"
@@ -780,7 +780,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Connections[OleDbConnection]"
+                  refId="Package\STAGE CLIENTE\Destino OLE DB 1.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[AGVS-001.BI_ERROR]"
                   connectionManagerRefId="Package.ConnectionManagers[AGVS-001.BI_ERROR]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
@@ -788,133 +788,133 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB]"
+                  refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB]"
                   errorOrTruncationOperation="Inserir"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de Destino OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[IDCLIENTE]"
                       cachedDataType="i4"
                       cachedName="IDCLIENTE"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[NOME]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[NOME]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="30"
                       cachedName="NOME"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NOME]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[SOBRENOME]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[SOBRENOME]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="30"
                       cachedName="SOBRENOME"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SOBRENOME]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SOBRENOME]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SOBRENOME]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[EMAIL]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[EMAIL]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="60"
                       cachedName="EMAIL"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[EMAIL]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[SEXO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[SEXO]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1"
                       cachedName="SEXO"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[SEXO]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[NASCIMENTO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[NASCIMENTO]"
                       cachedDataType="dbDate"
                       cachedName="NASCIMENTO"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[NASCIMENTO]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[NOME COMPLETO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[NOME COMPLETO]"
                       cachedDataType="wstr"
                       cachedLength="61"
                       cachedName="NOME COMPLETO"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME COMPLETO]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME COMPLETO]"
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[NOME COMPLETO]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[SEXO PALAVRA]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[SEXO PALAVRA]"
                       cachedDataType="wstr"
                       cachedLength="9"
                       cachedName="SEXO PALAVRA"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO PALAVRA]"
-                      lineageId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO PALAVRA]"
+                      lineageId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada].Columns[SEXO PALAVRA]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[ErrorCode]"
                       cachedDataType="i4"
                       cachedName="ErrorCode"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorCode]"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorCode]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorCode]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorCode]" />
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].Columns[ErrorColumn]"
                       cachedDataType="i4"
                       cachedName="ErrorColumn"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorColumn]"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorColumn]" />
+                      externalMetadataColumnId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorColumn]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[IDCLIENTE]"
                       dataType="i4"
                       name="IDCLIENTE" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME]"
                       codePage="1252"
                       dataType="str"
                       length="30"
                       name="NOME" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SOBRENOME]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SOBRENOME]"
                       codePage="1252"
                       dataType="str"
                       length="30"
                       name="SOBRENOME" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[EMAIL]"
                       codePage="1252"
                       dataType="str"
                       length="60"
                       name="EMAIL" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO]"
                       codePage="1252"
                       dataType="str"
                       length="1"
                       name="SEXO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NASCIMENTO]"
                       dataType="dbDate"
                       name="NASCIMENTO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME COMPLETO]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[NOME COMPLETO]"
                       dataType="wstr"
                       length="61"
                       name="NOME COMPLETO" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO PALAVRA]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[SEXO PALAVRA]"
                       dataType="wstr"
                       length="9"
                       name="SEXO PALAVRA" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorCode]"
                       dataType="i4"
                       name="ErrorCode" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB].ExternalColumns[ErrorColumn]"
                       dataType="i4"
                       name="ErrorColumn" />
                   </externalMetadataColumns>
@@ -922,22 +922,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB]"
+                  refId="Package\STAGE CLIENTE\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Destino OLE DB"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB]">
+                  synchronousInputId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\STAGE CLIENTE\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\STAGE CLIENTE\Destino OLE DB 1.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -946,7 +946,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO"
+              refId="Package\STAGE CLIENTE\PROCURA ENDERECO"
               componentClassID="Microsoft.Lookup"
               contactInfo="Pesquisa;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;6"
               description="Une colunas adicionais aos fluxos de dados pesquisando valores de uma tabela. Por exemplo, una à coluna 'employee id' a tabela de funcionários para obter 'hire date' e 'employee name'. Essa transformação é recomendada quando a tabela de pesquisa está de acordo com a memória."
@@ -1010,7 +1010,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Especifica a lista de identificadores de linhagem mapeados para os parâmetros usados pela instrução SQL na propriedade SQLCommand. As entradas na lista são separadas por ponto e vírgulas."
-                  name="ParameterMap">#{Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]};</property>
+                  name="ParameterMap">#{Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]};</property>
                 <property
                   dataType="System.Int32"
                   description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
@@ -1022,7 +1022,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Connections[OleDbConnection]"
+                  refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
                   connectionManagerRefId="Package.ConnectionManagers[AGVS-001.COMERCIO_OLTP]"
                   description="O gerenciador de conexões usado para acessar dados de pesquisa."
@@ -1030,14 +1030,14 @@ where [refTable].[ID_CLIENTE] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]"
+                  refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]"
                   name="Entrada de Pesquisa">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Inputs[Entrada de Pesquisa].Columns[IDCLIENTE]"
+                      refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Inputs[Entrada de Pesquisa].Columns[IDCLIENTE]"
                       cachedDataType="i4"
                       cachedName="IDCLIENTE"
-                      lineageId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]">
+                      lineageId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB].Columns[IDCLIENTE]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -1055,20 +1055,20 @@ where [refTable].[ID_CLIENTE] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa]"
+                  refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa]"
                   errorOrTruncationOperation="Pesquisa"
                   errorRowDisposition="RedirectRow"
                   exclusionGroup="1"
                   name="Saída de Correspondência de Pesquisa"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]">
+                  synchronousInputId="Package\STAGE CLIENTE\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[REGIAO]"
+                      refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[REGIAO]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Copiar Coluna"
                       length="20"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[REGIAO]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[REGIAO]"
                       name="REGIAO"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1079,12 +1079,12 @@ where [refTable].[ID_CLIENTE] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[ESTADO]"
+                      refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[ESTADO]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Copiar Coluna"
                       length="20"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[ESTADO]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[ESTADO]"
                       name="ESTADO"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1095,12 +1095,12 @@ where [refTable].[ID_CLIENTE] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[CIDADE]"
+                      refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[CIDADE]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Copiar Coluna"
                       length="50"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[CIDADE]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa].Columns[CIDADE]"
                       name="CIDADE"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1114,30 +1114,30 @@ where [refTable].[ID_CLIENTE] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída Sem Correspondência de Pesquisa]"
+                  refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída Sem Correspondência de Pesquisa]"
                   description="A saída de Pesquisa que trata as linhas sem entradas correspondentes no conjunto de dados de referência. Use essa saída quando a propriedade NoMatchBehavior estiver definida como &quot;Enviar as linhas sem entradas correspondentes para a saída sem correspondência&quot;."
                   exclusionGroup="1"
                   name="Saída Sem Correspondência de Pesquisa"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]">
+                  synchronousInputId="Package\STAGE CLIENTE\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa]"
+                  refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Saída de Erro de Pesquisa"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]">
+                  synchronousInputId="Package\STAGE CLIENTE\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorCode]"
+                      refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorCode]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorColumn]"
+                      refId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorColumn]"
+                      lineageId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1148,30 +1148,30 @@ where [refTable].[ID_CLIENTE] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
-              endId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]"
+              refId="Package\STAGE CLIENTE.Paths[Saída de Coluna Derivada]"
+              endId="Package\STAGE CLIENTE\PROCURA ENDERECO.Inputs[Entrada de Pesquisa]"
               name="Saída de Coluna Derivada"
-              startId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Outputs[Saída de Coluna Derivada]" />
+              startId="Package\STAGE CLIENTE\CONCATENA NOME.Outputs[Saída de Coluna Derivada]" />
             <path
-              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Conversão de Dados]"
-              endId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB]"
+              refId="Package\STAGE CLIENTE.Paths[Saída de Conversão de Dados]"
+              endId="Package\STAGE CLIENTE\Destino OLE DB.Inputs[Entrada de Destino OLE DB]"
               name="Saída de Conversão de Dados"
-              startId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados]" />
+              startId="Package\STAGE CLIENTE\Conversão de Dados.Outputs[Saída de Conversão de Dados]" />
             <path
-              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Correspondência de Pesquisa]"
-              endId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
+              refId="Package\STAGE CLIENTE.Paths[Saída de Correspondência de Pesquisa]"
+              endId="Package\STAGE CLIENTE\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
               name="Saída de Correspondência de Pesquisa"
-              startId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa]" />
+              startId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Correspondência de Pesquisa]" />
             <path
-              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Erro de Pesquisa]"
-              endId="Package\Tarefa Fluxo de Dados\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB]"
+              refId="Package\STAGE CLIENTE.Paths[Saída de Erro de Pesquisa]"
+              endId="Package\STAGE CLIENTE\Destino OLE DB 1.Inputs[Entrada de Destino OLE DB]"
               name="Saída de Erro de Pesquisa"
-              startId="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa]" />
+              startId="Package\STAGE CLIENTE\PROCURA ENDERECO.Outputs[Saída de Erro de Pesquisa]" />
             <path
-              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem OLE DB]"
-              endId="Package\Tarefa Fluxo de Dados\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]"
+              refId="Package\STAGE CLIENTE.Paths[Saída de Origem OLE DB]"
+              endId="Package\STAGE CLIENTE\CONCATENA NOME.Inputs[Entrada de Coluna Derivada]"
               name="Saída de Origem OLE DB"
-              startId="Package\Tarefa Fluxo de Dados\CLIENTE.Outputs[Saída de Origem OLE DB]" />
+              startId="Package\STAGE CLIENTE\CLIENTE.Outputs[Saída de Origem OLE DB]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1202,7 +1202,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
       DTS:From="Package\TRUNCATE ST_STAGE"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restrição"
-      DTS:To="Package\Tarefa Fluxo de Dados" />
+      DTS:To="Package\STAGE CLIENTE" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
@@ -1221,12 +1221,12 @@ where [refTable].[ID_CLIENTE] = ?</property>
           Id="Package\TRUNCATE ST_STAGE"
           TopLeft="210.5,106.5" />
         <NodeLayout
-          Size="191,42"
-          Id="Package\Tarefa Fluxo de Dados"
-          TopLeft="218.5,204.5" />
+          Size="166,42"
+          Id="Package\STAGE CLIENTE"
+          TopLeft="223.5,204.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restrição]"
-          TopLeft="312,148.5">
+          TopLeft="308.25,148.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1250,24 +1250,24 @@ where [refTable].[ID_CLIENTE] = ?</property>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Tarefa Fluxo de Dados">
+    design-time-name="Package\STAGE CLIENTE">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="125,42"
-          Id="Package\Tarefa Fluxo de Dados\CLIENTE"
+          Id="Package\STAGE CLIENTE\CLIENTE"
           TopLeft="25,123" />
         <NodeLayout
           Size="159,45"
-          Id="Package\Tarefa Fluxo de Dados\Destino OLE DB"
+          Id="Package\STAGE CLIENTE\Destino OLE DB"
           TopLeft="627,378" />
         <NodeLayout
           Size="184,42"
-          Id="Package\Tarefa Fluxo de Dados\CONCATENA NOME"
+          Id="Package\STAGE CLIENTE\CONCATENA NOME"
           TopLeft="281,121" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem OLE DB]"
+          Id="Package\STAGE CLIENTE.Paths[Saída de Origem OLE DB]"
           TopLeft="150,143">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1290,10 +1290,10 @@ where [refTable].[ID_CLIENTE] = ?</property>
         </EdgeLayout>
         <NodeLayout
           Size="199,42"
-          Id="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO"
+          Id="Package\STAGE CLIENTE\PROCURA ENDERECO"
           TopLeft="596,116" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
+          Id="Package\STAGE CLIENTE.Paths[Saída de Coluna Derivada]"
           TopLeft="465,139.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1316,10 +1316,10 @@ where [refTable].[ID_CLIENTE] = ?</property>
         </EdgeLayout>
         <NodeLayout
           Size="182,42"
-          Id="Package\Tarefa Fluxo de Dados\Conversão de Dados"
+          Id="Package\STAGE CLIENTE\Conversão de Dados"
           TopLeft="611,253" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Correspondência de Pesquisa]"
+          Id="Package\STAGE CLIENTE.Paths[Saída de Correspondência de Pesquisa]"
           TopLeft="698.75,158">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1344,10 +1344,10 @@ where [refTable].[ID_CLIENTE] = ?</property>
         </EdgeLayout>
         <NodeLayout
           Size="169,42"
-          Id="Package\Tarefa Fluxo de Dados\Destino OLE DB 1"
+          Id="Package\STAGE CLIENTE\Destino OLE DB 1"
           TopLeft="618,14" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Erro de Pesquisa]"
+          Id="Package\STAGE CLIENTE.Paths[Saída de Erro de Pesquisa]"
           TopLeft="699,116">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1371,7 +1371,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Conversão de Dados]"
+          Id="Package\STAGE CLIENTE.Paths[Saída de Conversão de Dados]"
           TopLeft="704.25,295">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1396,7 +1396,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarefa Fluxo de Dados\CLIENTE">
+    design-time-name="Package\STAGE CLIENTE\CLIENTE">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1409,7 +1409,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarefa Fluxo de Dados\Destino OLE DB">
+    design-time-name="Package\STAGE CLIENTE\Destino OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1422,7 +1422,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarefa Fluxo de Dados\PROCURA ENDERECO">
+    design-time-name="Package\STAGE CLIENTE\PROCURA ENDERECO">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -1445,7 +1445,7 @@ where [refTable].[ID_CLIENTE] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarefa Fluxo de Dados\Destino OLE DB 1">
+    design-time-name="Package\STAGE CLIENTE\Destino OLE DB 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
