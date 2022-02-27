@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ETL</Name>
-    <LastWriteTime>2022-02-27T21:11:32.6953768Z</LastWriteTime>
+    <LastWriteTime>2022-02-27T21:56:04.9529084Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -29,6 +29,21 @@
     <ProjectBuildItemInfo>
       <Name>CARGA_FORMA.dtsx</Name>
       <LastWriteTime>2022-02-27T21:18:56.4028059Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CARGA_FORNECEDOR.dtsx</Name>
+      <LastWriteTime>2022-02-27T21:26:38.9361002Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CARGA_NOTA_FISCAL.dtsx</Name>
+      <LastWriteTime>2022-02-27T21:36:24.6942437Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CARGA_FATO.dtsx</Name>
+      <LastWriteTime>2022-02-27T21:59:54.1093502Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
