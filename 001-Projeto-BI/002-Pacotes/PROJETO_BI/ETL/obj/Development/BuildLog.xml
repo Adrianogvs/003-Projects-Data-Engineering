@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ETL</Name>
-    <LastWriteTime>2022-02-27T15:20:28.3913862Z</LastWriteTime>
+    <LastWriteTime>2022-02-27T15:25:03.4716404Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -19,6 +19,11 @@
     <ProjectBuildItemInfo>
       <Name>CARAGA_CATEGORIA.dtsx</Name>
       <LastWriteTime>2022-02-27T15:22:57.716325Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CARGA_PRODUTO.dtsx</Name>
+      <LastWriteTime>2022-02-27T15:25:35.4326173Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
