@@ -123,15 +123,15 @@ A Tera necessita armazenar os seus dados de vendas. O estoque não faz parte do 
 
 ## Dos Cadastros Gerais
 
-De forma geral, seguem os requisitos de cadastro abaixo:
-01 – Cadastro de Produtos
-02 – Cadastro de Fornecedores
-03 – Cadastro de Categorias
-04 – Cadastro de Notas Fiscais
-05 - Cadastro de Endereço de Clientes
-06 – Cadastro de Clientes
-07 - Cadastro de Formas de Pagamentos
-08 – Cadastro de vendedores (Os vendedores cuidam dos pedidos online, acompanhando os mesmos desde a origem até a entrega, otimizando e solucionando problemas.).
+De forma geral, seguem os requisitos de cadastro abaixo:<br>
+01 – Cadastro de Produtos<p>
+02 – Cadastro de Fornecedores<p>
+03 – Cadastro de Categorias<p>
+04 – Cadastro de Notas Fiscais<p>
+05 - Cadastro de Endereço de Clientes<p>
+06 – Cadastro de Clientes<p>
+07 - Cadastro de Formas de Pagamentos<p>
+08 – Cadastro de vendedores (Os vendedores cuidam dos pedidos online, acompanhando os mesmos desde a origem até a entrega, otimizando e solucionando problemas.).<p>
 
 
 ## Dos Campos
