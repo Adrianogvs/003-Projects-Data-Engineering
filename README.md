@@ -145,9 +145,10 @@ Criar tabela
 
 ## Particularidades
 
-Requisitos levantados pela equipe quanto a detalhes do modelo de negócio da Tera. As particularidades são requisitos e são obrigatórios.
-01 – Nas vendas, uma nota fiscal pode conter um ou mais produtos, diferentes ou do mesmo tipo, contendo um subtotal de produtos do mesmo tipo e um total, com a soma de todos os produtos.
-02 – Os funcionários possuem gerentes, que deverão ser armazenados no banco de dados.
+Requisitos levantados pela equipe quanto a detalhes do modelo de negócio da Tera. As particularidades são requisitos e são obrigatórios.<br>
+
+01 – Nas vendas, uma nota fiscal pode conter um ou mais produtos, diferentes ou do mesmo tipo, contendo um subtotal de produtos do mesmo tipo e um total, com a soma de todos os produtos.<p>
+02 – Os funcionários possuem gerentes, que deverão ser armazenados no banco de dados.<p>
 
 
 ## Regras de Negócio Essenciais
