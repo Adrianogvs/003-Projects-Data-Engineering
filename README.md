@@ -124,6 +124,7 @@ A Tera necessita armazenar os seus dados de vendas. O estoque não faz parte do 
 ## Dos Cadastros Gerais
 
 De forma geral, seguem os requisitos de cadastro abaixo:<br>
+
 01 – Cadastro de Produtos<p>
 02 – Cadastro de Fornecedores<p>
 03 – Cadastro de Categorias<p>
