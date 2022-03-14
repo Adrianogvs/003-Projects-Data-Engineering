@@ -213,7 +213,7 @@ Criar tabela
 		FK_NOTA_FORMA FOREIGN KEY(ID_FORMA) REFERENCES FORMA_PAGAMENTO(IDFORMA)
 	 	GO
 		
-		.
+		
 
 
 
@@ -236,7 +236,7 @@ Criar tabela
 
 ### Entrevista com o manager da Tera, João Carvalho.
 
-Hoje vendemos muito, temos lucro, mas não sei qual categoria, fornecedor ou produto me dá mais lucro. Não estou interessado em quantidade. Preciso de analises sumarizadas. Hoje não me interessa saber quantas vendas tem um vendedor e sim o total vendido, pois os mesmos podem recomendar produtos para os nossos clientes. Também gostaria de sabe meus custos por sazonalidade. Preciso saber em que época do ano gasto mais para controlar meus investimentos em estoque ou contratações. Saber qual cliente compra mais comigo em termos totais também seria uma boa ideia. Outra necessidade é um relatório com os dados dos meus clientes, pois a enviar mala direta vai ser uma prática da empresa. Não estou seguro se uma análise por categoria ou fornecedor seria útil. A sua equipe também pode disponibilizar o que achar relevante para o negócio.
+Hoje vendemos muito, temos lucro, mas não sei qual **categoria**, **fornecedor** ou **produto** me dá mais lucro. __Não estou interessado em quantidade__. Preciso de analises sumarizadas. Hoje não me interessa saber quantas vendas tem um vendedor e sim o total vendido, pois os mesmos podem recomendar produtos para os nossos clientes. Também gostaria de sabe meus **custos** por **sazonalidade**. Preciso saber em que época do ano gasto mais para controlar meus investimentos em estoque ou contratações. Saber qual **cliente** compra mais comigo em termos totais também seria uma boa ideia. Outra necessidade é um relatório com os dados dos meus clientes, pois a enviar mala direta vai ser uma prática da empresa. Não estou seguro se uma análise por **categoria ou fornecedor** seria útil. A sua equipe também pode disponibilizar o que achar relevante para o negócio.
 
 
 ### Alteração de Requisitos:
