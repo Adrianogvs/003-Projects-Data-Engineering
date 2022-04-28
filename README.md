@@ -113,7 +113,7 @@ A fase 01 compreende à modelagem relacional do negócio. O SGBD utilizado será
 
 ## Dicionário de Dados
 
-Fazer 
+Em desenvolvimento...
 
 
 ## Requisitos
@@ -141,6 +141,7 @@ Todos os cadastros deverão ter números de identificação automáticos e aleat
 
 
 Criar tabela
+	Em desenvolvimento...
 
 
 ## Particularidades
@@ -169,6 +170,7 @@ Aqui foram analisadas as regras de negócio junto aos usuários da Tera. Os anal
 Abaixo segue o dicionário de constraints criadas no banco COMERCIO_OLTP
 
 Criar tabela
+	Em desenvolvimento...
 
 
 
